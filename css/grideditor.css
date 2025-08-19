@@ -1,0 +1,3642 @@
+.ge-mainControls {
+  position: relative;
+  min-height: 22px;
+  margin-bottom: 10px;
+}
+.ge-mainControls .ge-wrapper {
+  padding-top: 5px;
+}
+.ge-mainControls .ge-wrapper.ge-top .container {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.ge-mainControls .ge-wrapper.ge-fixed {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+}
+.ge-mainControls .ge-addRowGroup .btn.btn-primary {
+  background: #f4f4f4;
+  color: #666;
+  border-color: #999;
+  display: flex;
+  align-items: center;
+}
+.ge-mainControls .ge-addRowGroup .btn.btn-primary:hover {
+  background: #E3E3E3;
+}
+.ge-mainControls .ge-addRowGroup .ge-row-icon {
+  width: 48px;
+  margin: 0;
+}
+.ge-mainControls .ge-addRowGroup .ge-row-icon .column {
+  height: 10px;
+  background: #666;
+  padding: 0;
+  border-left: 2px solid #f4f4f4;
+}
+.ge-mainControls .ge-layout-mode {
+  margin-left: 5px;
+}
+.ge-mainControls .btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+.ge-mainControls .pull-right {
+  float: right;
+}
+.ge-mainControls .dropdown-menu a {
+  cursor: default;
+}
+.ge-html-output {
+  width: 100%;
+  display: none;
+}
+/* Not editing */
+.ge-canvas .ge-tools-drawer {
+  display: none;
+}
+/* While editing */
+.ge-canvas.ge-editing {
+  /* Content area */
+  /* Sorting */
+}
+.ge-canvas.ge-editing .ge-tools-drawer {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: blue;
+  margin: 0 -5px 5px;
+  display: block;
+  width: calc(100% + 2 * 5px);
+}
+.ge-canvas.ge-editing .ge-tools-drawer > a {
+  display: inline-block;
+  padding: 5px;
+}
+.ge-canvas.ge-editing .ge-tools-drawer > a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.ge-canvas.ge-editing .ge-tools-drawer .ge-details {
+  padding: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: none;
+}
+.ge-canvas.ge-editing .ge-tools-drawer .ge-details .btn-group a {
+  color: #333;
+}
+.ge-canvas.ge-editing .ge-tools-drawer .ge-details .btn-group a.active {
+  color: white;
+}
+.ge-canvas.ge-editing .ge-tools-drawer .ge-details .btn-group a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.ge-canvas.ge-editing .ge-tools-drawer .ge-details input.ge-id {
+  border: 1px solid #7F7F7F;
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  width: 80px;
+}
+.ge-canvas.ge-editing .row {
+  background-color: #efefef;
+  border: 1px solid #999999;
+  padding: 0 5px 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.ge-canvas.ge-editing .row > .ge-tools-drawer {
+  background: #e5e5e5;
+}
+.ge-canvas.ge-editing .row > .ge-tools-drawer > a {
+  color: #666;
+}
+.ge-canvas.ge-editing .row > .ge-tools-drawer > a.ge-add-column {
+  color: #178acc;
+}
+.ge-canvas.ge-editing .column {
+  background-color: rgba(47, 164, 231, 0.15);
+  border: 1px solid #2FA4E7;
+  padding: 0 5px 5px;
+}
+.ge-canvas.ge-editing .column > .ge-tools-drawer {
+  background: #afd5ea;
+}
+.ge-canvas.ge-editing .column > .ge-tools-drawer a {
+  color: #178acc;
+}
+.ge-canvas.ge-editing .column > .ge-tools-drawer > a.ge-add-row {
+  color: #666;
+}
+.ge-canvas.ge-editing .ge-content-type-tinymce.active {
+  outline: 1px dotted #333;
+}
+.ge-canvas.ge-editing .ui-sortable-placeholder {
+  background: rgba(255, 255, 0, 0.2);
+  visibility: visible !important;
+  min-height: 50px;
+  max-height: 100px;
+}
+.ge-canvas.xs {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.xs .col-sm-1,
+.ge-canvas.xs .col-md-1,
+.ge-canvas.xs .col-lg-1,
+.ge-canvas.xs .col-xl-1,
+.ge-canvas.xs .col-xxl-1,
+.ge-canvas.xs .col-x3l-1 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-2,
+.ge-canvas.xs .col-md-2,
+.ge-canvas.xs .col-lg-2,
+.ge-canvas.xs .col-xl-2,
+.ge-canvas.xs .col-xxl-2,
+.ge-canvas.xs .col-x3l-2 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-3,
+.ge-canvas.xs .col-md-3,
+.ge-canvas.xs .col-lg-3,
+.ge-canvas.xs .col-xl-3,
+.ge-canvas.xs .col-xxl-3,
+.ge-canvas.xs .col-x3l-3 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-4,
+.ge-canvas.xs .col-md-4,
+.ge-canvas.xs .col-lg-4,
+.ge-canvas.xs .col-xl-4,
+.ge-canvas.xs .col-xxl-4,
+.ge-canvas.xs .col-x3l-4 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-5,
+.ge-canvas.xs .col-md-5,
+.ge-canvas.xs .col-lg-5,
+.ge-canvas.xs .col-xl-5,
+.ge-canvas.xs .col-xxl-5,
+.ge-canvas.xs .col-x3l-5 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-6,
+.ge-canvas.xs .col-md-6,
+.ge-canvas.xs .col-lg-6,
+.ge-canvas.xs .col-xl-6,
+.ge-canvas.xs .col-xxl-6,
+.ge-canvas.xs .col-x3l-6 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-7,
+.ge-canvas.xs .col-md-7,
+.ge-canvas.xs .col-lg-7,
+.ge-canvas.xs .col-xl-7,
+.ge-canvas.xs .col-xxl-7,
+.ge-canvas.xs .col-x3l-7 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-8,
+.ge-canvas.xs .col-md-8,
+.ge-canvas.xs .col-lg-8,
+.ge-canvas.xs .col-xl-8,
+.ge-canvas.xs .col-xxl-8,
+.ge-canvas.xs .col-x3l-8 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-9,
+.ge-canvas.xs .col-md-9,
+.ge-canvas.xs .col-lg-9,
+.ge-canvas.xs .col-xl-9,
+.ge-canvas.xs .col-xxl-9,
+.ge-canvas.xs .col-x3l-9 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-10,
+.ge-canvas.xs .col-md-10,
+.ge-canvas.xs .col-lg-10,
+.ge-canvas.xs .col-xl-10,
+.ge-canvas.xs .col-xxl-10,
+.ge-canvas.xs .col-x3l-10 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-11,
+.ge-canvas.xs .col-md-11,
+.ge-canvas.xs .col-lg-11,
+.ge-canvas.xs .col-xl-11,
+.ge-canvas.xs .col-xxl-11,
+.ge-canvas.xs .col-x3l-11 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-12,
+.ge-canvas.xs .col-md-12,
+.ge-canvas.xs .col-lg-12,
+.ge-canvas.xs .col-xl-12,
+.ge-canvas.xs .col-xxl-12,
+.ge-canvas.xs .col-x3l-12 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-13,
+.ge-canvas.xs .col-md-13,
+.ge-canvas.xs .col-lg-13,
+.ge-canvas.xs .col-xl-13,
+.ge-canvas.xs .col-xxl-13,
+.ge-canvas.xs .col-x3l-13 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-14,
+.ge-canvas.xs .col-md-14,
+.ge-canvas.xs .col-lg-14,
+.ge-canvas.xs .col-xl-14,
+.ge-canvas.xs .col-xxl-14,
+.ge-canvas.xs .col-x3l-14 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-15,
+.ge-canvas.xs .col-md-15,
+.ge-canvas.xs .col-lg-15,
+.ge-canvas.xs .col-xl-15,
+.ge-canvas.xs .col-xxl-15,
+.ge-canvas.xs .col-x3l-15 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-16,
+.ge-canvas.xs .col-md-16,
+.ge-canvas.xs .col-lg-16,
+.ge-canvas.xs .col-xl-16,
+.ge-canvas.xs .col-xxl-16,
+.ge-canvas.xs .col-x3l-16 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-17,
+.ge-canvas.xs .col-md-17,
+.ge-canvas.xs .col-lg-17,
+.ge-canvas.xs .col-xl-17,
+.ge-canvas.xs .col-xxl-17,
+.ge-canvas.xs .col-x3l-17 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-18,
+.ge-canvas.xs .col-md-18,
+.ge-canvas.xs .col-lg-18,
+.ge-canvas.xs .col-xl-18,
+.ge-canvas.xs .col-xxl-18,
+.ge-canvas.xs .col-x3l-18 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-19,
+.ge-canvas.xs .col-md-19,
+.ge-canvas.xs .col-lg-19,
+.ge-canvas.xs .col-xl-19,
+.ge-canvas.xs .col-xxl-19,
+.ge-canvas.xs .col-x3l-19 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-20,
+.ge-canvas.xs .col-md-20,
+.ge-canvas.xs .col-lg-20,
+.ge-canvas.xs .col-xl-20,
+.ge-canvas.xs .col-xxl-20,
+.ge-canvas.xs .col-x3l-20 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-21,
+.ge-canvas.xs .col-md-21,
+.ge-canvas.xs .col-lg-21,
+.ge-canvas.xs .col-xl-21,
+.ge-canvas.xs .col-xxl-21,
+.ge-canvas.xs .col-x3l-21 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-22,
+.ge-canvas.xs .col-md-22,
+.ge-canvas.xs .col-lg-22,
+.ge-canvas.xs .col-xl-22,
+.ge-canvas.xs .col-xxl-22,
+.ge-canvas.xs .col-x3l-22 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-23,
+.ge-canvas.xs .col-md-23,
+.ge-canvas.xs .col-lg-23,
+.ge-canvas.xs .col-xl-23,
+.ge-canvas.xs .col-xxl-23,
+.ge-canvas.xs .col-x3l-23 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-24,
+.ge-canvas.xs .col-md-24,
+.ge-canvas.xs .col-lg-24,
+.ge-canvas.xs .col-xl-24,
+.ge-canvas.xs .col-xxl-24,
+.ge-canvas.xs .col-x3l-24 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-25,
+.ge-canvas.xs .col-md-25,
+.ge-canvas.xs .col-lg-25,
+.ge-canvas.xs .col-xl-25,
+.ge-canvas.xs .col-xxl-25,
+.ge-canvas.xs .col-x3l-25 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-26,
+.ge-canvas.xs .col-md-26,
+.ge-canvas.xs .col-lg-26,
+.ge-canvas.xs .col-xl-26,
+.ge-canvas.xs .col-xxl-26,
+.ge-canvas.xs .col-x3l-26 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-27,
+.ge-canvas.xs .col-md-27,
+.ge-canvas.xs .col-lg-27,
+.ge-canvas.xs .col-xl-27,
+.ge-canvas.xs .col-xxl-27,
+.ge-canvas.xs .col-x3l-27 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-28,
+.ge-canvas.xs .col-md-28,
+.ge-canvas.xs .col-lg-28,
+.ge-canvas.xs .col-xl-28,
+.ge-canvas.xs .col-xxl-28,
+.ge-canvas.xs .col-x3l-28 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-29,
+.ge-canvas.xs .col-md-29,
+.ge-canvas.xs .col-lg-29,
+.ge-canvas.xs .col-xl-29,
+.ge-canvas.xs .col-xxl-29,
+.ge-canvas.xs .col-x3l-29 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-30,
+.ge-canvas.xs .col-md-30,
+.ge-canvas.xs .col-lg-30,
+.ge-canvas.xs .col-xl-30,
+.ge-canvas.xs .col-xxl-30,
+.ge-canvas.xs .col-x3l-30 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-31,
+.ge-canvas.xs .col-md-31,
+.ge-canvas.xs .col-lg-31,
+.ge-canvas.xs .col-xl-31,
+.ge-canvas.xs .col-xxl-31,
+.ge-canvas.xs .col-x3l-31 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-32,
+.ge-canvas.xs .col-md-32,
+.ge-canvas.xs .col-lg-32,
+.ge-canvas.xs .col-xl-32,
+.ge-canvas.xs .col-xxl-32,
+.ge-canvas.xs .col-x3l-32 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-33,
+.ge-canvas.xs .col-md-33,
+.ge-canvas.xs .col-lg-33,
+.ge-canvas.xs .col-xl-33,
+.ge-canvas.xs .col-xxl-33,
+.ge-canvas.xs .col-x3l-33 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-34,
+.ge-canvas.xs .col-md-34,
+.ge-canvas.xs .col-lg-34,
+.ge-canvas.xs .col-xl-34,
+.ge-canvas.xs .col-xxl-34,
+.ge-canvas.xs .col-x3l-34 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-35,
+.ge-canvas.xs .col-md-35,
+.ge-canvas.xs .col-lg-35,
+.ge-canvas.xs .col-xl-35,
+.ge-canvas.xs .col-xxl-35,
+.ge-canvas.xs .col-x3l-35 {
+  width: inherit;
+}
+.ge-canvas.xs .col-sm-36,
+.ge-canvas.xs .col-md-36,
+.ge-canvas.xs .col-lg-36,
+.ge-canvas.xs .col-xl-36,
+.ge-canvas.xs .col-xxl-36,
+.ge-canvas.xs .col-x3l-36 {
+  width: inherit;
+}
+.ge-canvas.xs .col-xs-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.xs .col-xs-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.xs .col-xs-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.xs .col-xs-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.xs .col-xs-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.xs .col-xs-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.xs .col-xs-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.xs .col-xs-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.xs .col-xs-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.xs .col-xs-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.xs .col-xs-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.xs .col-xs-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.xs .col-xs-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.xs .col-xs-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.xs .col-xs-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.xs .col-xs-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.xs .col-xs-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.xs .col-xs-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.xs .col-xs-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.xs .col-xs-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.xs .col-xs-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.xs .col-xs-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.xs .col-xs-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.xs .col-xs-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.xs .col-xs-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.xs .col-xs-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.xs .col-xs-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.xs .col-xs-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.xs .col-xs-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.xs .col-xs-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.xs .col-xs-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.xs .col-xs-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.xs .col-xs-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.xs .col-xs-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.xs .col-xs-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.xs .col-xs-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ge-canvas.sm {
+  max-width: 576px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.sm .col-xs-1,
+.ge-canvas.sm .col-md-1,
+.ge-canvas.sm .col-lg-1,
+.ge-canvas.sm .col-xl-1,
+.ge-canvas.sm .col-xxl-1,
+.ge-canvas.sm .col-x3l-1 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-2,
+.ge-canvas.sm .col-md-2,
+.ge-canvas.sm .col-lg-2,
+.ge-canvas.sm .col-xl-2,
+.ge-canvas.sm .col-xxl-2,
+.ge-canvas.sm .col-x3l-2 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-3,
+.ge-canvas.sm .col-md-3,
+.ge-canvas.sm .col-lg-3,
+.ge-canvas.sm .col-xl-3,
+.ge-canvas.sm .col-xxl-3,
+.ge-canvas.sm .col-x3l-3 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-4,
+.ge-canvas.sm .col-md-4,
+.ge-canvas.sm .col-lg-4,
+.ge-canvas.sm .col-xl-4,
+.ge-canvas.sm .col-xxl-4,
+.ge-canvas.sm .col-x3l-4 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-5,
+.ge-canvas.sm .col-md-5,
+.ge-canvas.sm .col-lg-5,
+.ge-canvas.sm .col-xl-5,
+.ge-canvas.sm .col-xxl-5,
+.ge-canvas.sm .col-x3l-5 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-6,
+.ge-canvas.sm .col-md-6,
+.ge-canvas.sm .col-lg-6,
+.ge-canvas.sm .col-xl-6,
+.ge-canvas.sm .col-xxl-6,
+.ge-canvas.sm .col-x3l-6 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-7,
+.ge-canvas.sm .col-md-7,
+.ge-canvas.sm .col-lg-7,
+.ge-canvas.sm .col-xl-7,
+.ge-canvas.sm .col-xxl-7,
+.ge-canvas.sm .col-x3l-7 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-8,
+.ge-canvas.sm .col-md-8,
+.ge-canvas.sm .col-lg-8,
+.ge-canvas.sm .col-xl-8,
+.ge-canvas.sm .col-xxl-8,
+.ge-canvas.sm .col-x3l-8 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-9,
+.ge-canvas.sm .col-md-9,
+.ge-canvas.sm .col-lg-9,
+.ge-canvas.sm .col-xl-9,
+.ge-canvas.sm .col-xxl-9,
+.ge-canvas.sm .col-x3l-9 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-10,
+.ge-canvas.sm .col-md-10,
+.ge-canvas.sm .col-lg-10,
+.ge-canvas.sm .col-xl-10,
+.ge-canvas.sm .col-xxl-10,
+.ge-canvas.sm .col-x3l-10 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-11,
+.ge-canvas.sm .col-md-11,
+.ge-canvas.sm .col-lg-11,
+.ge-canvas.sm .col-xl-11,
+.ge-canvas.sm .col-xxl-11,
+.ge-canvas.sm .col-x3l-11 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-12,
+.ge-canvas.sm .col-md-12,
+.ge-canvas.sm .col-lg-12,
+.ge-canvas.sm .col-xl-12,
+.ge-canvas.sm .col-xxl-12,
+.ge-canvas.sm .col-x3l-12 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-13,
+.ge-canvas.sm .col-md-13,
+.ge-canvas.sm .col-lg-13,
+.ge-canvas.sm .col-xl-13,
+.ge-canvas.sm .col-xxl-13,
+.ge-canvas.sm .col-x3l-13 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-14,
+.ge-canvas.sm .col-md-14,
+.ge-canvas.sm .col-lg-14,
+.ge-canvas.sm .col-xl-14,
+.ge-canvas.sm .col-xxl-14,
+.ge-canvas.sm .col-x3l-14 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-15,
+.ge-canvas.sm .col-md-15,
+.ge-canvas.sm .col-lg-15,
+.ge-canvas.sm .col-xl-15,
+.ge-canvas.sm .col-xxl-15,
+.ge-canvas.sm .col-x3l-15 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-16,
+.ge-canvas.sm .col-md-16,
+.ge-canvas.sm .col-lg-16,
+.ge-canvas.sm .col-xl-16,
+.ge-canvas.sm .col-xxl-16,
+.ge-canvas.sm .col-x3l-16 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-17,
+.ge-canvas.sm .col-md-17,
+.ge-canvas.sm .col-lg-17,
+.ge-canvas.sm .col-xl-17,
+.ge-canvas.sm .col-xxl-17,
+.ge-canvas.sm .col-x3l-17 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-18,
+.ge-canvas.sm .col-md-18,
+.ge-canvas.sm .col-lg-18,
+.ge-canvas.sm .col-xl-18,
+.ge-canvas.sm .col-xxl-18,
+.ge-canvas.sm .col-x3l-18 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-19,
+.ge-canvas.sm .col-md-19,
+.ge-canvas.sm .col-lg-19,
+.ge-canvas.sm .col-xl-19,
+.ge-canvas.sm .col-xxl-19,
+.ge-canvas.sm .col-x3l-19 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-20,
+.ge-canvas.sm .col-md-20,
+.ge-canvas.sm .col-lg-20,
+.ge-canvas.sm .col-xl-20,
+.ge-canvas.sm .col-xxl-20,
+.ge-canvas.sm .col-x3l-20 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-21,
+.ge-canvas.sm .col-md-21,
+.ge-canvas.sm .col-lg-21,
+.ge-canvas.sm .col-xl-21,
+.ge-canvas.sm .col-xxl-21,
+.ge-canvas.sm .col-x3l-21 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-22,
+.ge-canvas.sm .col-md-22,
+.ge-canvas.sm .col-lg-22,
+.ge-canvas.sm .col-xl-22,
+.ge-canvas.sm .col-xxl-22,
+.ge-canvas.sm .col-x3l-22 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-23,
+.ge-canvas.sm .col-md-23,
+.ge-canvas.sm .col-lg-23,
+.ge-canvas.sm .col-xl-23,
+.ge-canvas.sm .col-xxl-23,
+.ge-canvas.sm .col-x3l-23 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-24,
+.ge-canvas.sm .col-md-24,
+.ge-canvas.sm .col-lg-24,
+.ge-canvas.sm .col-xl-24,
+.ge-canvas.sm .col-xxl-24,
+.ge-canvas.sm .col-x3l-24 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-25,
+.ge-canvas.sm .col-md-25,
+.ge-canvas.sm .col-lg-25,
+.ge-canvas.sm .col-xl-25,
+.ge-canvas.sm .col-xxl-25,
+.ge-canvas.sm .col-x3l-25 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-26,
+.ge-canvas.sm .col-md-26,
+.ge-canvas.sm .col-lg-26,
+.ge-canvas.sm .col-xl-26,
+.ge-canvas.sm .col-xxl-26,
+.ge-canvas.sm .col-x3l-26 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-27,
+.ge-canvas.sm .col-md-27,
+.ge-canvas.sm .col-lg-27,
+.ge-canvas.sm .col-xl-27,
+.ge-canvas.sm .col-xxl-27,
+.ge-canvas.sm .col-x3l-27 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-28,
+.ge-canvas.sm .col-md-28,
+.ge-canvas.sm .col-lg-28,
+.ge-canvas.sm .col-xl-28,
+.ge-canvas.sm .col-xxl-28,
+.ge-canvas.sm .col-x3l-28 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-29,
+.ge-canvas.sm .col-md-29,
+.ge-canvas.sm .col-lg-29,
+.ge-canvas.sm .col-xl-29,
+.ge-canvas.sm .col-xxl-29,
+.ge-canvas.sm .col-x3l-29 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-30,
+.ge-canvas.sm .col-md-30,
+.ge-canvas.sm .col-lg-30,
+.ge-canvas.sm .col-xl-30,
+.ge-canvas.sm .col-xxl-30,
+.ge-canvas.sm .col-x3l-30 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-31,
+.ge-canvas.sm .col-md-31,
+.ge-canvas.sm .col-lg-31,
+.ge-canvas.sm .col-xl-31,
+.ge-canvas.sm .col-xxl-31,
+.ge-canvas.sm .col-x3l-31 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-32,
+.ge-canvas.sm .col-md-32,
+.ge-canvas.sm .col-lg-32,
+.ge-canvas.sm .col-xl-32,
+.ge-canvas.sm .col-xxl-32,
+.ge-canvas.sm .col-x3l-32 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-33,
+.ge-canvas.sm .col-md-33,
+.ge-canvas.sm .col-lg-33,
+.ge-canvas.sm .col-xl-33,
+.ge-canvas.sm .col-xxl-33,
+.ge-canvas.sm .col-x3l-33 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-34,
+.ge-canvas.sm .col-md-34,
+.ge-canvas.sm .col-lg-34,
+.ge-canvas.sm .col-xl-34,
+.ge-canvas.sm .col-xxl-34,
+.ge-canvas.sm .col-x3l-34 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-35,
+.ge-canvas.sm .col-md-35,
+.ge-canvas.sm .col-lg-35,
+.ge-canvas.sm .col-xl-35,
+.ge-canvas.sm .col-xxl-35,
+.ge-canvas.sm .col-x3l-35 {
+  width: inherit;
+}
+.ge-canvas.sm .col-xs-36,
+.ge-canvas.sm .col-md-36,
+.ge-canvas.sm .col-lg-36,
+.ge-canvas.sm .col-xl-36,
+.ge-canvas.sm .col-xxl-36,
+.ge-canvas.sm .col-x3l-36 {
+  width: inherit;
+}
+.ge-canvas.sm .col-sm-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.sm .col-sm-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.sm .col-sm-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.sm .col-sm-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.sm .col-sm-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.sm .col-sm-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.sm .col-sm-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.sm .col-sm-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.sm .col-sm-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.sm .col-sm-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.sm .col-sm-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.sm .col-sm-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.sm .col-sm-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.sm .col-sm-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.sm .col-sm-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.sm .col-sm-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.sm .col-sm-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.sm .col-sm-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.sm .col-sm-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.sm .col-sm-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.sm .col-sm-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.sm .col-sm-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.sm .col-sm-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.sm .col-sm-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.sm .col-sm-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.sm .col-sm-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.sm .col-sm-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.sm .col-sm-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.sm .col-sm-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.sm .col-sm-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.sm .col-sm-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.sm .col-sm-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.sm .col-sm-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.sm .col-sm-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.sm .col-sm-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.sm .col-sm-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ge-canvas.md {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.md .col-xs-1,
+.ge-canvas.md .col-sm-1,
+.ge-canvas.md .col-lg-1,
+.ge-canvas.md .col-xl-1,
+.ge-canvas.md .col-xxl-1,
+.ge-canvas.md .col-x3l-1 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-2,
+.ge-canvas.md .col-sm-2,
+.ge-canvas.md .col-lg-2,
+.ge-canvas.md .col-xl-2,
+.ge-canvas.md .col-xxl-2,
+.ge-canvas.md .col-x3l-2 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-3,
+.ge-canvas.md .col-sm-3,
+.ge-canvas.md .col-lg-3,
+.ge-canvas.md .col-xl-3,
+.ge-canvas.md .col-xxl-3,
+.ge-canvas.md .col-x3l-3 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-4,
+.ge-canvas.md .col-sm-4,
+.ge-canvas.md .col-lg-4,
+.ge-canvas.md .col-xl-4,
+.ge-canvas.md .col-xxl-4,
+.ge-canvas.md .col-x3l-4 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-5,
+.ge-canvas.md .col-sm-5,
+.ge-canvas.md .col-lg-5,
+.ge-canvas.md .col-xl-5,
+.ge-canvas.md .col-xxl-5,
+.ge-canvas.md .col-x3l-5 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-6,
+.ge-canvas.md .col-sm-6,
+.ge-canvas.md .col-lg-6,
+.ge-canvas.md .col-xl-6,
+.ge-canvas.md .col-xxl-6,
+.ge-canvas.md .col-x3l-6 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-7,
+.ge-canvas.md .col-sm-7,
+.ge-canvas.md .col-lg-7,
+.ge-canvas.md .col-xl-7,
+.ge-canvas.md .col-xxl-7,
+.ge-canvas.md .col-x3l-7 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-8,
+.ge-canvas.md .col-sm-8,
+.ge-canvas.md .col-lg-8,
+.ge-canvas.md .col-xl-8,
+.ge-canvas.md .col-xxl-8,
+.ge-canvas.md .col-x3l-8 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-9,
+.ge-canvas.md .col-sm-9,
+.ge-canvas.md .col-lg-9,
+.ge-canvas.md .col-xl-9,
+.ge-canvas.md .col-xxl-9,
+.ge-canvas.md .col-x3l-9 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-10,
+.ge-canvas.md .col-sm-10,
+.ge-canvas.md .col-lg-10,
+.ge-canvas.md .col-xl-10,
+.ge-canvas.md .col-xxl-10,
+.ge-canvas.md .col-x3l-10 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-11,
+.ge-canvas.md .col-sm-11,
+.ge-canvas.md .col-lg-11,
+.ge-canvas.md .col-xl-11,
+.ge-canvas.md .col-xxl-11,
+.ge-canvas.md .col-x3l-11 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-12,
+.ge-canvas.md .col-sm-12,
+.ge-canvas.md .col-lg-12,
+.ge-canvas.md .col-xl-12,
+.ge-canvas.md .col-xxl-12,
+.ge-canvas.md .col-x3l-12 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-13,
+.ge-canvas.md .col-sm-13,
+.ge-canvas.md .col-lg-13,
+.ge-canvas.md .col-xl-13,
+.ge-canvas.md .col-xxl-13,
+.ge-canvas.md .col-x3l-13 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-14,
+.ge-canvas.md .col-sm-14,
+.ge-canvas.md .col-lg-14,
+.ge-canvas.md .col-xl-14,
+.ge-canvas.md .col-xxl-14,
+.ge-canvas.md .col-x3l-14 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-15,
+.ge-canvas.md .col-sm-15,
+.ge-canvas.md .col-lg-15,
+.ge-canvas.md .col-xl-15,
+.ge-canvas.md .col-xxl-15,
+.ge-canvas.md .col-x3l-15 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-16,
+.ge-canvas.md .col-sm-16,
+.ge-canvas.md .col-lg-16,
+.ge-canvas.md .col-xl-16,
+.ge-canvas.md .col-xxl-16,
+.ge-canvas.md .col-x3l-16 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-17,
+.ge-canvas.md .col-sm-17,
+.ge-canvas.md .col-lg-17,
+.ge-canvas.md .col-xl-17,
+.ge-canvas.md .col-xxl-17,
+.ge-canvas.md .col-x3l-17 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-18,
+.ge-canvas.md .col-sm-18,
+.ge-canvas.md .col-lg-18,
+.ge-canvas.md .col-xl-18,
+.ge-canvas.md .col-xxl-18,
+.ge-canvas.md .col-x3l-18 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-19,
+.ge-canvas.md .col-sm-19,
+.ge-canvas.md .col-lg-19,
+.ge-canvas.md .col-xl-19,
+.ge-canvas.md .col-xxl-19,
+.ge-canvas.md .col-x3l-19 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-20,
+.ge-canvas.md .col-sm-20,
+.ge-canvas.md .col-lg-20,
+.ge-canvas.md .col-xl-20,
+.ge-canvas.md .col-xxl-20,
+.ge-canvas.md .col-x3l-20 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-21,
+.ge-canvas.md .col-sm-21,
+.ge-canvas.md .col-lg-21,
+.ge-canvas.md .col-xl-21,
+.ge-canvas.md .col-xxl-21,
+.ge-canvas.md .col-x3l-21 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-22,
+.ge-canvas.md .col-sm-22,
+.ge-canvas.md .col-lg-22,
+.ge-canvas.md .col-xl-22,
+.ge-canvas.md .col-xxl-22,
+.ge-canvas.md .col-x3l-22 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-23,
+.ge-canvas.md .col-sm-23,
+.ge-canvas.md .col-lg-23,
+.ge-canvas.md .col-xl-23,
+.ge-canvas.md .col-xxl-23,
+.ge-canvas.md .col-x3l-23 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-24,
+.ge-canvas.md .col-sm-24,
+.ge-canvas.md .col-lg-24,
+.ge-canvas.md .col-xl-24,
+.ge-canvas.md .col-xxl-24,
+.ge-canvas.md .col-x3l-24 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-25,
+.ge-canvas.md .col-sm-25,
+.ge-canvas.md .col-lg-25,
+.ge-canvas.md .col-xl-25,
+.ge-canvas.md .col-xxl-25,
+.ge-canvas.md .col-x3l-25 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-26,
+.ge-canvas.md .col-sm-26,
+.ge-canvas.md .col-lg-26,
+.ge-canvas.md .col-xl-26,
+.ge-canvas.md .col-xxl-26,
+.ge-canvas.md .col-x3l-26 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-27,
+.ge-canvas.md .col-sm-27,
+.ge-canvas.md .col-lg-27,
+.ge-canvas.md .col-xl-27,
+.ge-canvas.md .col-xxl-27,
+.ge-canvas.md .col-x3l-27 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-28,
+.ge-canvas.md .col-sm-28,
+.ge-canvas.md .col-lg-28,
+.ge-canvas.md .col-xl-28,
+.ge-canvas.md .col-xxl-28,
+.ge-canvas.md .col-x3l-28 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-29,
+.ge-canvas.md .col-sm-29,
+.ge-canvas.md .col-lg-29,
+.ge-canvas.md .col-xl-29,
+.ge-canvas.md .col-xxl-29,
+.ge-canvas.md .col-x3l-29 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-30,
+.ge-canvas.md .col-sm-30,
+.ge-canvas.md .col-lg-30,
+.ge-canvas.md .col-xl-30,
+.ge-canvas.md .col-xxl-30,
+.ge-canvas.md .col-x3l-30 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-31,
+.ge-canvas.md .col-sm-31,
+.ge-canvas.md .col-lg-31,
+.ge-canvas.md .col-xl-31,
+.ge-canvas.md .col-xxl-31,
+.ge-canvas.md .col-x3l-31 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-32,
+.ge-canvas.md .col-sm-32,
+.ge-canvas.md .col-lg-32,
+.ge-canvas.md .col-xl-32,
+.ge-canvas.md .col-xxl-32,
+.ge-canvas.md .col-x3l-32 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-33,
+.ge-canvas.md .col-sm-33,
+.ge-canvas.md .col-lg-33,
+.ge-canvas.md .col-xl-33,
+.ge-canvas.md .col-xxl-33,
+.ge-canvas.md .col-x3l-33 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-34,
+.ge-canvas.md .col-sm-34,
+.ge-canvas.md .col-lg-34,
+.ge-canvas.md .col-xl-34,
+.ge-canvas.md .col-xxl-34,
+.ge-canvas.md .col-x3l-34 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-35,
+.ge-canvas.md .col-sm-35,
+.ge-canvas.md .col-lg-35,
+.ge-canvas.md .col-xl-35,
+.ge-canvas.md .col-xxl-35,
+.ge-canvas.md .col-x3l-35 {
+  width: inherit;
+}
+.ge-canvas.md .col-xs-36,
+.ge-canvas.md .col-sm-36,
+.ge-canvas.md .col-lg-36,
+.ge-canvas.md .col-xl-36,
+.ge-canvas.md .col-xxl-36,
+.ge-canvas.md .col-x3l-36 {
+  width: inherit;
+}
+.ge-canvas.md .col-md-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.md .col-md-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.md .col-md-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.md .col-md-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.md .col-md-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.md .col-md-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.md .col-md-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.md .col-md-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.md .col-md-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.md .col-md-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.md .col-md-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.md .col-md-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.md .col-md-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.md .col-md-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.md .col-md-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.md .col-md-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.md .col-md-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.md .col-md-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.md .col-md-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.md .col-md-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.md .col-md-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.md .col-md-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.md .col-md-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.md .col-md-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.md .col-md-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.md .col-md-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.md .col-md-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.md .col-md-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.md .col-md-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.md .col-md-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.md .col-md-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.md .col-md-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.md .col-md-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.md .col-md-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.md .col-md-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.md .col-md-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ge-canvas.lg {
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.lg .col-xs-1,
+.ge-canvas.lg .col-sm-1,
+.ge-canvas.lg .col-md-1,
+.ge-canvas.lg .col-xl-1,
+.ge-canvas.lg .col-xxl-1,
+.ge-canvas.lg .col-x3l-1 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-2,
+.ge-canvas.lg .col-sm-2,
+.ge-canvas.lg .col-md-2,
+.ge-canvas.lg .col-xl-2,
+.ge-canvas.lg .col-xxl-2,
+.ge-canvas.lg .col-x3l-2 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-3,
+.ge-canvas.lg .col-sm-3,
+.ge-canvas.lg .col-md-3,
+.ge-canvas.lg .col-xl-3,
+.ge-canvas.lg .col-xxl-3,
+.ge-canvas.lg .col-x3l-3 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-4,
+.ge-canvas.lg .col-sm-4,
+.ge-canvas.lg .col-md-4,
+.ge-canvas.lg .col-xl-4,
+.ge-canvas.lg .col-xxl-4,
+.ge-canvas.lg .col-x3l-4 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-5,
+.ge-canvas.lg .col-sm-5,
+.ge-canvas.lg .col-md-5,
+.ge-canvas.lg .col-xl-5,
+.ge-canvas.lg .col-xxl-5,
+.ge-canvas.lg .col-x3l-5 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-6,
+.ge-canvas.lg .col-sm-6,
+.ge-canvas.lg .col-md-6,
+.ge-canvas.lg .col-xl-6,
+.ge-canvas.lg .col-xxl-6,
+.ge-canvas.lg .col-x3l-6 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-7,
+.ge-canvas.lg .col-sm-7,
+.ge-canvas.lg .col-md-7,
+.ge-canvas.lg .col-xl-7,
+.ge-canvas.lg .col-xxl-7,
+.ge-canvas.lg .col-x3l-7 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-8,
+.ge-canvas.lg .col-sm-8,
+.ge-canvas.lg .col-md-8,
+.ge-canvas.lg .col-xl-8,
+.ge-canvas.lg .col-xxl-8,
+.ge-canvas.lg .col-x3l-8 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-9,
+.ge-canvas.lg .col-sm-9,
+.ge-canvas.lg .col-md-9,
+.ge-canvas.lg .col-xl-9,
+.ge-canvas.lg .col-xxl-9,
+.ge-canvas.lg .col-x3l-9 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-10,
+.ge-canvas.lg .col-sm-10,
+.ge-canvas.lg .col-md-10,
+.ge-canvas.lg .col-xl-10,
+.ge-canvas.lg .col-xxl-10,
+.ge-canvas.lg .col-x3l-10 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-11,
+.ge-canvas.lg .col-sm-11,
+.ge-canvas.lg .col-md-11,
+.ge-canvas.lg .col-xl-11,
+.ge-canvas.lg .col-xxl-11,
+.ge-canvas.lg .col-x3l-11 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-12,
+.ge-canvas.lg .col-sm-12,
+.ge-canvas.lg .col-md-12,
+.ge-canvas.lg .col-xl-12,
+.ge-canvas.lg .col-xxl-12,
+.ge-canvas.lg .col-x3l-12 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-13,
+.ge-canvas.lg .col-sm-13,
+.ge-canvas.lg .col-md-13,
+.ge-canvas.lg .col-xl-13,
+.ge-canvas.lg .col-xxl-13,
+.ge-canvas.lg .col-x3l-13 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-14,
+.ge-canvas.lg .col-sm-14,
+.ge-canvas.lg .col-md-14,
+.ge-canvas.lg .col-xl-14,
+.ge-canvas.lg .col-xxl-14,
+.ge-canvas.lg .col-x3l-14 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-15,
+.ge-canvas.lg .col-sm-15,
+.ge-canvas.lg .col-md-15,
+.ge-canvas.lg .col-xl-15,
+.ge-canvas.lg .col-xxl-15,
+.ge-canvas.lg .col-x3l-15 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-16,
+.ge-canvas.lg .col-sm-16,
+.ge-canvas.lg .col-md-16,
+.ge-canvas.lg .col-xl-16,
+.ge-canvas.lg .col-xxl-16,
+.ge-canvas.lg .col-x3l-16 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-17,
+.ge-canvas.lg .col-sm-17,
+.ge-canvas.lg .col-md-17,
+.ge-canvas.lg .col-xl-17,
+.ge-canvas.lg .col-xxl-17,
+.ge-canvas.lg .col-x3l-17 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-18,
+.ge-canvas.lg .col-sm-18,
+.ge-canvas.lg .col-md-18,
+.ge-canvas.lg .col-xl-18,
+.ge-canvas.lg .col-xxl-18,
+.ge-canvas.lg .col-x3l-18 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-19,
+.ge-canvas.lg .col-sm-19,
+.ge-canvas.lg .col-md-19,
+.ge-canvas.lg .col-xl-19,
+.ge-canvas.lg .col-xxl-19,
+.ge-canvas.lg .col-x3l-19 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-20,
+.ge-canvas.lg .col-sm-20,
+.ge-canvas.lg .col-md-20,
+.ge-canvas.lg .col-xl-20,
+.ge-canvas.lg .col-xxl-20,
+.ge-canvas.lg .col-x3l-20 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-21,
+.ge-canvas.lg .col-sm-21,
+.ge-canvas.lg .col-md-21,
+.ge-canvas.lg .col-xl-21,
+.ge-canvas.lg .col-xxl-21,
+.ge-canvas.lg .col-x3l-21 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-22,
+.ge-canvas.lg .col-sm-22,
+.ge-canvas.lg .col-md-22,
+.ge-canvas.lg .col-xl-22,
+.ge-canvas.lg .col-xxl-22,
+.ge-canvas.lg .col-x3l-22 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-23,
+.ge-canvas.lg .col-sm-23,
+.ge-canvas.lg .col-md-23,
+.ge-canvas.lg .col-xl-23,
+.ge-canvas.lg .col-xxl-23,
+.ge-canvas.lg .col-x3l-23 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-24,
+.ge-canvas.lg .col-sm-24,
+.ge-canvas.lg .col-md-24,
+.ge-canvas.lg .col-xl-24,
+.ge-canvas.lg .col-xxl-24,
+.ge-canvas.lg .col-x3l-24 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-25,
+.ge-canvas.lg .col-sm-25,
+.ge-canvas.lg .col-md-25,
+.ge-canvas.lg .col-xl-25,
+.ge-canvas.lg .col-xxl-25,
+.ge-canvas.lg .col-x3l-25 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-26,
+.ge-canvas.lg .col-sm-26,
+.ge-canvas.lg .col-md-26,
+.ge-canvas.lg .col-xl-26,
+.ge-canvas.lg .col-xxl-26,
+.ge-canvas.lg .col-x3l-26 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-27,
+.ge-canvas.lg .col-sm-27,
+.ge-canvas.lg .col-md-27,
+.ge-canvas.lg .col-xl-27,
+.ge-canvas.lg .col-xxl-27,
+.ge-canvas.lg .col-x3l-27 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-28,
+.ge-canvas.lg .col-sm-28,
+.ge-canvas.lg .col-md-28,
+.ge-canvas.lg .col-xl-28,
+.ge-canvas.lg .col-xxl-28,
+.ge-canvas.lg .col-x3l-28 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-29,
+.ge-canvas.lg .col-sm-29,
+.ge-canvas.lg .col-md-29,
+.ge-canvas.lg .col-xl-29,
+.ge-canvas.lg .col-xxl-29,
+.ge-canvas.lg .col-x3l-29 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-30,
+.ge-canvas.lg .col-sm-30,
+.ge-canvas.lg .col-md-30,
+.ge-canvas.lg .col-xl-30,
+.ge-canvas.lg .col-xxl-30,
+.ge-canvas.lg .col-x3l-30 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-31,
+.ge-canvas.lg .col-sm-31,
+.ge-canvas.lg .col-md-31,
+.ge-canvas.lg .col-xl-31,
+.ge-canvas.lg .col-xxl-31,
+.ge-canvas.lg .col-x3l-31 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-32,
+.ge-canvas.lg .col-sm-32,
+.ge-canvas.lg .col-md-32,
+.ge-canvas.lg .col-xl-32,
+.ge-canvas.lg .col-xxl-32,
+.ge-canvas.lg .col-x3l-32 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-33,
+.ge-canvas.lg .col-sm-33,
+.ge-canvas.lg .col-md-33,
+.ge-canvas.lg .col-xl-33,
+.ge-canvas.lg .col-xxl-33,
+.ge-canvas.lg .col-x3l-33 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-34,
+.ge-canvas.lg .col-sm-34,
+.ge-canvas.lg .col-md-34,
+.ge-canvas.lg .col-xl-34,
+.ge-canvas.lg .col-xxl-34,
+.ge-canvas.lg .col-x3l-34 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-35,
+.ge-canvas.lg .col-sm-35,
+.ge-canvas.lg .col-md-35,
+.ge-canvas.lg .col-xl-35,
+.ge-canvas.lg .col-xxl-35,
+.ge-canvas.lg .col-x3l-35 {
+  width: inherit;
+}
+.ge-canvas.lg .col-xs-36,
+.ge-canvas.lg .col-sm-36,
+.ge-canvas.lg .col-md-36,
+.ge-canvas.lg .col-xl-36,
+.ge-canvas.lg .col-xxl-36,
+.ge-canvas.lg .col-x3l-36 {
+  width: inherit;
+}
+.ge-canvas.lg .col-lg-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.lg .col-lg-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.lg .col-lg-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.lg .col-lg-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.lg .col-lg-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.lg .col-lg-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.lg .col-lg-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.lg .col-lg-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.lg .col-lg-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.lg .col-lg-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.lg .col-lg-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.lg .col-lg-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.lg .col-lg-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.lg .col-lg-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.lg .col-lg-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.lg .col-lg-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.lg .col-lg-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.lg .col-lg-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.lg .col-lg-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.lg .col-lg-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.lg .col-lg-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.lg .col-lg-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.lg .col-lg-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.lg .col-lg-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.lg .col-lg-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.lg .col-lg-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.lg .col-lg-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.lg .col-lg-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.lg .col-lg-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.lg .col-lg-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.lg .col-lg-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.lg .col-lg-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.lg .col-lg-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.lg .col-lg-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.lg .col-lg-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.lg .col-lg-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ge-canvas.xl {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.xl .col-xs-1,
+.ge-canvas.xl .col-sm-1,
+.ge-canvas.xl .col-md-1,
+.ge-canvas.xl .col-lg-1,
+.ge-canvas.xl .col-xxl-1,
+.ge-canvas.xl .col-x3l-1 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-2,
+.ge-canvas.xl .col-sm-2,
+.ge-canvas.xl .col-md-2,
+.ge-canvas.xl .col-lg-2,
+.ge-canvas.xl .col-xxl-2,
+.ge-canvas.xl .col-x3l-2 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-3,
+.ge-canvas.xl .col-sm-3,
+.ge-canvas.xl .col-md-3,
+.ge-canvas.xl .col-lg-3,
+.ge-canvas.xl .col-xxl-3,
+.ge-canvas.xl .col-x3l-3 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-4,
+.ge-canvas.xl .col-sm-4,
+.ge-canvas.xl .col-md-4,
+.ge-canvas.xl .col-lg-4,
+.ge-canvas.xl .col-xxl-4,
+.ge-canvas.xl .col-x3l-4 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-5,
+.ge-canvas.xl .col-sm-5,
+.ge-canvas.xl .col-md-5,
+.ge-canvas.xl .col-lg-5,
+.ge-canvas.xl .col-xxl-5,
+.ge-canvas.xl .col-x3l-5 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-6,
+.ge-canvas.xl .col-sm-6,
+.ge-canvas.xl .col-md-6,
+.ge-canvas.xl .col-lg-6,
+.ge-canvas.xl .col-xxl-6,
+.ge-canvas.xl .col-x3l-6 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-7,
+.ge-canvas.xl .col-sm-7,
+.ge-canvas.xl .col-md-7,
+.ge-canvas.xl .col-lg-7,
+.ge-canvas.xl .col-xxl-7,
+.ge-canvas.xl .col-x3l-7 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-8,
+.ge-canvas.xl .col-sm-8,
+.ge-canvas.xl .col-md-8,
+.ge-canvas.xl .col-lg-8,
+.ge-canvas.xl .col-xxl-8,
+.ge-canvas.xl .col-x3l-8 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-9,
+.ge-canvas.xl .col-sm-9,
+.ge-canvas.xl .col-md-9,
+.ge-canvas.xl .col-lg-9,
+.ge-canvas.xl .col-xxl-9,
+.ge-canvas.xl .col-x3l-9 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-10,
+.ge-canvas.xl .col-sm-10,
+.ge-canvas.xl .col-md-10,
+.ge-canvas.xl .col-lg-10,
+.ge-canvas.xl .col-xxl-10,
+.ge-canvas.xl .col-x3l-10 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-11,
+.ge-canvas.xl .col-sm-11,
+.ge-canvas.xl .col-md-11,
+.ge-canvas.xl .col-lg-11,
+.ge-canvas.xl .col-xxl-11,
+.ge-canvas.xl .col-x3l-11 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-12,
+.ge-canvas.xl .col-sm-12,
+.ge-canvas.xl .col-md-12,
+.ge-canvas.xl .col-lg-12,
+.ge-canvas.xl .col-xxl-12,
+.ge-canvas.xl .col-x3l-12 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-13,
+.ge-canvas.xl .col-sm-13,
+.ge-canvas.xl .col-md-13,
+.ge-canvas.xl .col-lg-13,
+.ge-canvas.xl .col-xxl-13,
+.ge-canvas.xl .col-x3l-13 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-14,
+.ge-canvas.xl .col-sm-14,
+.ge-canvas.xl .col-md-14,
+.ge-canvas.xl .col-lg-14,
+.ge-canvas.xl .col-xxl-14,
+.ge-canvas.xl .col-x3l-14 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-15,
+.ge-canvas.xl .col-sm-15,
+.ge-canvas.xl .col-md-15,
+.ge-canvas.xl .col-lg-15,
+.ge-canvas.xl .col-xxl-15,
+.ge-canvas.xl .col-x3l-15 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-16,
+.ge-canvas.xl .col-sm-16,
+.ge-canvas.xl .col-md-16,
+.ge-canvas.xl .col-lg-16,
+.ge-canvas.xl .col-xxl-16,
+.ge-canvas.xl .col-x3l-16 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-17,
+.ge-canvas.xl .col-sm-17,
+.ge-canvas.xl .col-md-17,
+.ge-canvas.xl .col-lg-17,
+.ge-canvas.xl .col-xxl-17,
+.ge-canvas.xl .col-x3l-17 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-18,
+.ge-canvas.xl .col-sm-18,
+.ge-canvas.xl .col-md-18,
+.ge-canvas.xl .col-lg-18,
+.ge-canvas.xl .col-xxl-18,
+.ge-canvas.xl .col-x3l-18 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-19,
+.ge-canvas.xl .col-sm-19,
+.ge-canvas.xl .col-md-19,
+.ge-canvas.xl .col-lg-19,
+.ge-canvas.xl .col-xxl-19,
+.ge-canvas.xl .col-x3l-19 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-20,
+.ge-canvas.xl .col-sm-20,
+.ge-canvas.xl .col-md-20,
+.ge-canvas.xl .col-lg-20,
+.ge-canvas.xl .col-xxl-20,
+.ge-canvas.xl .col-x3l-20 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-21,
+.ge-canvas.xl .col-sm-21,
+.ge-canvas.xl .col-md-21,
+.ge-canvas.xl .col-lg-21,
+.ge-canvas.xl .col-xxl-21,
+.ge-canvas.xl .col-x3l-21 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-22,
+.ge-canvas.xl .col-sm-22,
+.ge-canvas.xl .col-md-22,
+.ge-canvas.xl .col-lg-22,
+.ge-canvas.xl .col-xxl-22,
+.ge-canvas.xl .col-x3l-22 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-23,
+.ge-canvas.xl .col-sm-23,
+.ge-canvas.xl .col-md-23,
+.ge-canvas.xl .col-lg-23,
+.ge-canvas.xl .col-xxl-23,
+.ge-canvas.xl .col-x3l-23 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-24,
+.ge-canvas.xl .col-sm-24,
+.ge-canvas.xl .col-md-24,
+.ge-canvas.xl .col-lg-24,
+.ge-canvas.xl .col-xxl-24,
+.ge-canvas.xl .col-x3l-24 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-25,
+.ge-canvas.xl .col-sm-25,
+.ge-canvas.xl .col-md-25,
+.ge-canvas.xl .col-lg-25,
+.ge-canvas.xl .col-xxl-25,
+.ge-canvas.xl .col-x3l-25 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-26,
+.ge-canvas.xl .col-sm-26,
+.ge-canvas.xl .col-md-26,
+.ge-canvas.xl .col-lg-26,
+.ge-canvas.xl .col-xxl-26,
+.ge-canvas.xl .col-x3l-26 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-27,
+.ge-canvas.xl .col-sm-27,
+.ge-canvas.xl .col-md-27,
+.ge-canvas.xl .col-lg-27,
+.ge-canvas.xl .col-xxl-27,
+.ge-canvas.xl .col-x3l-27 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-28,
+.ge-canvas.xl .col-sm-28,
+.ge-canvas.xl .col-md-28,
+.ge-canvas.xl .col-lg-28,
+.ge-canvas.xl .col-xxl-28,
+.ge-canvas.xl .col-x3l-28 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-29,
+.ge-canvas.xl .col-sm-29,
+.ge-canvas.xl .col-md-29,
+.ge-canvas.xl .col-lg-29,
+.ge-canvas.xl .col-xxl-29,
+.ge-canvas.xl .col-x3l-29 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-30,
+.ge-canvas.xl .col-sm-30,
+.ge-canvas.xl .col-md-30,
+.ge-canvas.xl .col-lg-30,
+.ge-canvas.xl .col-xxl-30,
+.ge-canvas.xl .col-x3l-30 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-31,
+.ge-canvas.xl .col-sm-31,
+.ge-canvas.xl .col-md-31,
+.ge-canvas.xl .col-lg-31,
+.ge-canvas.xl .col-xxl-31,
+.ge-canvas.xl .col-x3l-31 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-32,
+.ge-canvas.xl .col-sm-32,
+.ge-canvas.xl .col-md-32,
+.ge-canvas.xl .col-lg-32,
+.ge-canvas.xl .col-xxl-32,
+.ge-canvas.xl .col-x3l-32 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-33,
+.ge-canvas.xl .col-sm-33,
+.ge-canvas.xl .col-md-33,
+.ge-canvas.xl .col-lg-33,
+.ge-canvas.xl .col-xxl-33,
+.ge-canvas.xl .col-x3l-33 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-34,
+.ge-canvas.xl .col-sm-34,
+.ge-canvas.xl .col-md-34,
+.ge-canvas.xl .col-lg-34,
+.ge-canvas.xl .col-xxl-34,
+.ge-canvas.xl .col-x3l-34 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-35,
+.ge-canvas.xl .col-sm-35,
+.ge-canvas.xl .col-md-35,
+.ge-canvas.xl .col-lg-35,
+.ge-canvas.xl .col-xxl-35,
+.ge-canvas.xl .col-x3l-35 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xs-36,
+.ge-canvas.xl .col-sm-36,
+.ge-canvas.xl .col-md-36,
+.ge-canvas.xl .col-lg-36,
+.ge-canvas.xl .col-xxl-36,
+.ge-canvas.xl .col-x3l-36 {
+  width: inherit;
+}
+.ge-canvas.xl .col-xl-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.xl .col-xl-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.xl .col-xl-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.xl .col-xl-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.xl .col-xl-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.xl .col-xl-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.xl .col-xl-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.xl .col-xl-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.xl .col-xl-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.xl .col-xl-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.xl .col-xl-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.xl .col-xl-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.xl .col-xl-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.xl .col-xl-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.xl .col-xl-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.xl .col-xl-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.xl .col-xl-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.xl .col-xl-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.xl .col-xl-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.xl .col-xl-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.xl .col-xl-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.xl .col-xl-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.xl .col-xl-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.xl .col-xl-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.xl .col-xl-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.xl .col-xl-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.xl .col-xl-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.xl .col-xl-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.xl .col-xl-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.xl .col-xl-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.xl .col-xl-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.xl .col-xl-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.xl .col-xl-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.xl .col-xl-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.xl .col-xl-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.xl .col-xl-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ge-canvas.xxl {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.xxl .col-xs-1,
+.ge-canvas.xxl .col-sm-1,
+.ge-canvas.xxl .col-md-1,
+.ge-canvas.xxl .col-lg-1,
+.ge-canvas.xxl .col-xl-1,
+.ge-canvas.xxl .col-x3l-1 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-2,
+.ge-canvas.xxl .col-sm-2,
+.ge-canvas.xxl .col-md-2,
+.ge-canvas.xxl .col-lg-2,
+.ge-canvas.xxl .col-xl-2,
+.ge-canvas.xxl .col-x3l-2 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-3,
+.ge-canvas.xxl .col-sm-3,
+.ge-canvas.xxl .col-md-3,
+.ge-canvas.xxl .col-lg-3,
+.ge-canvas.xxl .col-xl-3,
+.ge-canvas.xxl .col-x3l-3 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-4,
+.ge-canvas.xxl .col-sm-4,
+.ge-canvas.xxl .col-md-4,
+.ge-canvas.xxl .col-lg-4,
+.ge-canvas.xxl .col-xl-4,
+.ge-canvas.xxl .col-x3l-4 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-5,
+.ge-canvas.xxl .col-sm-5,
+.ge-canvas.xxl .col-md-5,
+.ge-canvas.xxl .col-lg-5,
+.ge-canvas.xxl .col-xl-5,
+.ge-canvas.xxl .col-x3l-5 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-6,
+.ge-canvas.xxl .col-sm-6,
+.ge-canvas.xxl .col-md-6,
+.ge-canvas.xxl .col-lg-6,
+.ge-canvas.xxl .col-xl-6,
+.ge-canvas.xxl .col-x3l-6 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-7,
+.ge-canvas.xxl .col-sm-7,
+.ge-canvas.xxl .col-md-7,
+.ge-canvas.xxl .col-lg-7,
+.ge-canvas.xxl .col-xl-7,
+.ge-canvas.xxl .col-x3l-7 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-8,
+.ge-canvas.xxl .col-sm-8,
+.ge-canvas.xxl .col-md-8,
+.ge-canvas.xxl .col-lg-8,
+.ge-canvas.xxl .col-xl-8,
+.ge-canvas.xxl .col-x3l-8 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-9,
+.ge-canvas.xxl .col-sm-9,
+.ge-canvas.xxl .col-md-9,
+.ge-canvas.xxl .col-lg-9,
+.ge-canvas.xxl .col-xl-9,
+.ge-canvas.xxl .col-x3l-9 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-10,
+.ge-canvas.xxl .col-sm-10,
+.ge-canvas.xxl .col-md-10,
+.ge-canvas.xxl .col-lg-10,
+.ge-canvas.xxl .col-xl-10,
+.ge-canvas.xxl .col-x3l-10 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-11,
+.ge-canvas.xxl .col-sm-11,
+.ge-canvas.xxl .col-md-11,
+.ge-canvas.xxl .col-lg-11,
+.ge-canvas.xxl .col-xl-11,
+.ge-canvas.xxl .col-x3l-11 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-12,
+.ge-canvas.xxl .col-sm-12,
+.ge-canvas.xxl .col-md-12,
+.ge-canvas.xxl .col-lg-12,
+.ge-canvas.xxl .col-xl-12,
+.ge-canvas.xxl .col-x3l-12 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-13,
+.ge-canvas.xxl .col-sm-13,
+.ge-canvas.xxl .col-md-13,
+.ge-canvas.xxl .col-lg-13,
+.ge-canvas.xxl .col-xl-13,
+.ge-canvas.xxl .col-x3l-13 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-14,
+.ge-canvas.xxl .col-sm-14,
+.ge-canvas.xxl .col-md-14,
+.ge-canvas.xxl .col-lg-14,
+.ge-canvas.xxl .col-xl-14,
+.ge-canvas.xxl .col-x3l-14 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-15,
+.ge-canvas.xxl .col-sm-15,
+.ge-canvas.xxl .col-md-15,
+.ge-canvas.xxl .col-lg-15,
+.ge-canvas.xxl .col-xl-15,
+.ge-canvas.xxl .col-x3l-15 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-16,
+.ge-canvas.xxl .col-sm-16,
+.ge-canvas.xxl .col-md-16,
+.ge-canvas.xxl .col-lg-16,
+.ge-canvas.xxl .col-xl-16,
+.ge-canvas.xxl .col-x3l-16 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-17,
+.ge-canvas.xxl .col-sm-17,
+.ge-canvas.xxl .col-md-17,
+.ge-canvas.xxl .col-lg-17,
+.ge-canvas.xxl .col-xl-17,
+.ge-canvas.xxl .col-x3l-17 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-18,
+.ge-canvas.xxl .col-sm-18,
+.ge-canvas.xxl .col-md-18,
+.ge-canvas.xxl .col-lg-18,
+.ge-canvas.xxl .col-xl-18,
+.ge-canvas.xxl .col-x3l-18 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-19,
+.ge-canvas.xxl .col-sm-19,
+.ge-canvas.xxl .col-md-19,
+.ge-canvas.xxl .col-lg-19,
+.ge-canvas.xxl .col-xl-19,
+.ge-canvas.xxl .col-x3l-19 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-20,
+.ge-canvas.xxl .col-sm-20,
+.ge-canvas.xxl .col-md-20,
+.ge-canvas.xxl .col-lg-20,
+.ge-canvas.xxl .col-xl-20,
+.ge-canvas.xxl .col-x3l-20 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-21,
+.ge-canvas.xxl .col-sm-21,
+.ge-canvas.xxl .col-md-21,
+.ge-canvas.xxl .col-lg-21,
+.ge-canvas.xxl .col-xl-21,
+.ge-canvas.xxl .col-x3l-21 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-22,
+.ge-canvas.xxl .col-sm-22,
+.ge-canvas.xxl .col-md-22,
+.ge-canvas.xxl .col-lg-22,
+.ge-canvas.xxl .col-xl-22,
+.ge-canvas.xxl .col-x3l-22 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-23,
+.ge-canvas.xxl .col-sm-23,
+.ge-canvas.xxl .col-md-23,
+.ge-canvas.xxl .col-lg-23,
+.ge-canvas.xxl .col-xl-23,
+.ge-canvas.xxl .col-x3l-23 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-24,
+.ge-canvas.xxl .col-sm-24,
+.ge-canvas.xxl .col-md-24,
+.ge-canvas.xxl .col-lg-24,
+.ge-canvas.xxl .col-xl-24,
+.ge-canvas.xxl .col-x3l-24 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-25,
+.ge-canvas.xxl .col-sm-25,
+.ge-canvas.xxl .col-md-25,
+.ge-canvas.xxl .col-lg-25,
+.ge-canvas.xxl .col-xl-25,
+.ge-canvas.xxl .col-x3l-25 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-26,
+.ge-canvas.xxl .col-sm-26,
+.ge-canvas.xxl .col-md-26,
+.ge-canvas.xxl .col-lg-26,
+.ge-canvas.xxl .col-xl-26,
+.ge-canvas.xxl .col-x3l-26 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-27,
+.ge-canvas.xxl .col-sm-27,
+.ge-canvas.xxl .col-md-27,
+.ge-canvas.xxl .col-lg-27,
+.ge-canvas.xxl .col-xl-27,
+.ge-canvas.xxl .col-x3l-27 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-28,
+.ge-canvas.xxl .col-sm-28,
+.ge-canvas.xxl .col-md-28,
+.ge-canvas.xxl .col-lg-28,
+.ge-canvas.xxl .col-xl-28,
+.ge-canvas.xxl .col-x3l-28 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-29,
+.ge-canvas.xxl .col-sm-29,
+.ge-canvas.xxl .col-md-29,
+.ge-canvas.xxl .col-lg-29,
+.ge-canvas.xxl .col-xl-29,
+.ge-canvas.xxl .col-x3l-29 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-30,
+.ge-canvas.xxl .col-sm-30,
+.ge-canvas.xxl .col-md-30,
+.ge-canvas.xxl .col-lg-30,
+.ge-canvas.xxl .col-xl-30,
+.ge-canvas.xxl .col-x3l-30 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-31,
+.ge-canvas.xxl .col-sm-31,
+.ge-canvas.xxl .col-md-31,
+.ge-canvas.xxl .col-lg-31,
+.ge-canvas.xxl .col-xl-31,
+.ge-canvas.xxl .col-x3l-31 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-32,
+.ge-canvas.xxl .col-sm-32,
+.ge-canvas.xxl .col-md-32,
+.ge-canvas.xxl .col-lg-32,
+.ge-canvas.xxl .col-xl-32,
+.ge-canvas.xxl .col-x3l-32 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-33,
+.ge-canvas.xxl .col-sm-33,
+.ge-canvas.xxl .col-md-33,
+.ge-canvas.xxl .col-lg-33,
+.ge-canvas.xxl .col-xl-33,
+.ge-canvas.xxl .col-x3l-33 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-34,
+.ge-canvas.xxl .col-sm-34,
+.ge-canvas.xxl .col-md-34,
+.ge-canvas.xxl .col-lg-34,
+.ge-canvas.xxl .col-xl-34,
+.ge-canvas.xxl .col-x3l-34 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-35,
+.ge-canvas.xxl .col-sm-35,
+.ge-canvas.xxl .col-md-35,
+.ge-canvas.xxl .col-lg-35,
+.ge-canvas.xxl .col-xl-35,
+.ge-canvas.xxl .col-x3l-35 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xs-36,
+.ge-canvas.xxl .col-sm-36,
+.ge-canvas.xxl .col-md-36,
+.ge-canvas.xxl .col-lg-36,
+.ge-canvas.xxl .col-xl-36,
+.ge-canvas.xxl .col-x3l-36 {
+  width: inherit;
+}
+.ge-canvas.xxl .col-xxl-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.xxl .col-xxl-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.xxl .col-xxl-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.xxl .col-xxl-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.xxl .col-xxl-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.xxl .col-xxl-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.xxl .col-xxl-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.xxl .col-xxl-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.xxl .col-xxl-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.xxl .col-xxl-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.xxl .col-xxl-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.xxl .col-xxl-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.xxl .col-xxl-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.xxl .col-xxl-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.xxl .col-xxl-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.xxl .col-xxl-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.xxl .col-xxl-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.xxl .col-xxl-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.xxl .col-xxl-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.xxl .col-xxl-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.xxl .col-xxl-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.xxl .col-xxl-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.xxl .col-xxl-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.xxl .col-xxl-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.xxl .col-xxl-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.xxl .col-xxl-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.xxl .col-xxl-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.xxl .col-xxl-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.xxl .col-xxl-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.xxl .col-xxl-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.xxl .col-xxl-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.xxl .col-xxl-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.xxl .col-xxl-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.xxl .col-xxl-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.xxl .col-xxl-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.xxl .col-xxl-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ge-canvas.x3l {
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.x3l .col-xs-1,
+.ge-canvas.x3l .col-sm-1,
+.ge-canvas.x3l .col-md-1,
+.ge-canvas.x3l .col-lg-1,
+.ge-canvas.x3l .col-xl-1,
+.ge-canvas.x3l .col-xxl-1 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-2,
+.ge-canvas.x3l .col-sm-2,
+.ge-canvas.x3l .col-md-2,
+.ge-canvas.x3l .col-lg-2,
+.ge-canvas.x3l .col-xl-2,
+.ge-canvas.x3l .col-xxl-2 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-3,
+.ge-canvas.x3l .col-sm-3,
+.ge-canvas.x3l .col-md-3,
+.ge-canvas.x3l .col-lg-3,
+.ge-canvas.x3l .col-xl-3,
+.ge-canvas.x3l .col-xxl-3 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-4,
+.ge-canvas.x3l .col-sm-4,
+.ge-canvas.x3l .col-md-4,
+.ge-canvas.x3l .col-lg-4,
+.ge-canvas.x3l .col-xl-4,
+.ge-canvas.x3l .col-xxl-4 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-5,
+.ge-canvas.x3l .col-sm-5,
+.ge-canvas.x3l .col-md-5,
+.ge-canvas.x3l .col-lg-5,
+.ge-canvas.x3l .col-xl-5,
+.ge-canvas.x3l .col-xxl-5 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-6,
+.ge-canvas.x3l .col-sm-6,
+.ge-canvas.x3l .col-md-6,
+.ge-canvas.x3l .col-lg-6,
+.ge-canvas.x3l .col-xl-6,
+.ge-canvas.x3l .col-xxl-6 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-7,
+.ge-canvas.x3l .col-sm-7,
+.ge-canvas.x3l .col-md-7,
+.ge-canvas.x3l .col-lg-7,
+.ge-canvas.x3l .col-xl-7,
+.ge-canvas.x3l .col-xxl-7 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-8,
+.ge-canvas.x3l .col-sm-8,
+.ge-canvas.x3l .col-md-8,
+.ge-canvas.x3l .col-lg-8,
+.ge-canvas.x3l .col-xl-8,
+.ge-canvas.x3l .col-xxl-8 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-9,
+.ge-canvas.x3l .col-sm-9,
+.ge-canvas.x3l .col-md-9,
+.ge-canvas.x3l .col-lg-9,
+.ge-canvas.x3l .col-xl-9,
+.ge-canvas.x3l .col-xxl-9 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-10,
+.ge-canvas.x3l .col-sm-10,
+.ge-canvas.x3l .col-md-10,
+.ge-canvas.x3l .col-lg-10,
+.ge-canvas.x3l .col-xl-10,
+.ge-canvas.x3l .col-xxl-10 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-11,
+.ge-canvas.x3l .col-sm-11,
+.ge-canvas.x3l .col-md-11,
+.ge-canvas.x3l .col-lg-11,
+.ge-canvas.x3l .col-xl-11,
+.ge-canvas.x3l .col-xxl-11 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-12,
+.ge-canvas.x3l .col-sm-12,
+.ge-canvas.x3l .col-md-12,
+.ge-canvas.x3l .col-lg-12,
+.ge-canvas.x3l .col-xl-12,
+.ge-canvas.x3l .col-xxl-12 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-13,
+.ge-canvas.x3l .col-sm-13,
+.ge-canvas.x3l .col-md-13,
+.ge-canvas.x3l .col-lg-13,
+.ge-canvas.x3l .col-xl-13,
+.ge-canvas.x3l .col-xxl-13 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-14,
+.ge-canvas.x3l .col-sm-14,
+.ge-canvas.x3l .col-md-14,
+.ge-canvas.x3l .col-lg-14,
+.ge-canvas.x3l .col-xl-14,
+.ge-canvas.x3l .col-xxl-14 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-15,
+.ge-canvas.x3l .col-sm-15,
+.ge-canvas.x3l .col-md-15,
+.ge-canvas.x3l .col-lg-15,
+.ge-canvas.x3l .col-xl-15,
+.ge-canvas.x3l .col-xxl-15 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-16,
+.ge-canvas.x3l .col-sm-16,
+.ge-canvas.x3l .col-md-16,
+.ge-canvas.x3l .col-lg-16,
+.ge-canvas.x3l .col-xl-16,
+.ge-canvas.x3l .col-xxl-16 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-17,
+.ge-canvas.x3l .col-sm-17,
+.ge-canvas.x3l .col-md-17,
+.ge-canvas.x3l .col-lg-17,
+.ge-canvas.x3l .col-xl-17,
+.ge-canvas.x3l .col-xxl-17 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-18,
+.ge-canvas.x3l .col-sm-18,
+.ge-canvas.x3l .col-md-18,
+.ge-canvas.x3l .col-lg-18,
+.ge-canvas.x3l .col-xl-18,
+.ge-canvas.x3l .col-xxl-18 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-19,
+.ge-canvas.x3l .col-sm-19,
+.ge-canvas.x3l .col-md-19,
+.ge-canvas.x3l .col-lg-19,
+.ge-canvas.x3l .col-xl-19,
+.ge-canvas.x3l .col-xxl-19 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-20,
+.ge-canvas.x3l .col-sm-20,
+.ge-canvas.x3l .col-md-20,
+.ge-canvas.x3l .col-lg-20,
+.ge-canvas.x3l .col-xl-20,
+.ge-canvas.x3l .col-xxl-20 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-21,
+.ge-canvas.x3l .col-sm-21,
+.ge-canvas.x3l .col-md-21,
+.ge-canvas.x3l .col-lg-21,
+.ge-canvas.x3l .col-xl-21,
+.ge-canvas.x3l .col-xxl-21 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-22,
+.ge-canvas.x3l .col-sm-22,
+.ge-canvas.x3l .col-md-22,
+.ge-canvas.x3l .col-lg-22,
+.ge-canvas.x3l .col-xl-22,
+.ge-canvas.x3l .col-xxl-22 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-23,
+.ge-canvas.x3l .col-sm-23,
+.ge-canvas.x3l .col-md-23,
+.ge-canvas.x3l .col-lg-23,
+.ge-canvas.x3l .col-xl-23,
+.ge-canvas.x3l .col-xxl-23 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-24,
+.ge-canvas.x3l .col-sm-24,
+.ge-canvas.x3l .col-md-24,
+.ge-canvas.x3l .col-lg-24,
+.ge-canvas.x3l .col-xl-24,
+.ge-canvas.x3l .col-xxl-24 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-25,
+.ge-canvas.x3l .col-sm-25,
+.ge-canvas.x3l .col-md-25,
+.ge-canvas.x3l .col-lg-25,
+.ge-canvas.x3l .col-xl-25,
+.ge-canvas.x3l .col-xxl-25 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-26,
+.ge-canvas.x3l .col-sm-26,
+.ge-canvas.x3l .col-md-26,
+.ge-canvas.x3l .col-lg-26,
+.ge-canvas.x3l .col-xl-26,
+.ge-canvas.x3l .col-xxl-26 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-27,
+.ge-canvas.x3l .col-sm-27,
+.ge-canvas.x3l .col-md-27,
+.ge-canvas.x3l .col-lg-27,
+.ge-canvas.x3l .col-xl-27,
+.ge-canvas.x3l .col-xxl-27 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-28,
+.ge-canvas.x3l .col-sm-28,
+.ge-canvas.x3l .col-md-28,
+.ge-canvas.x3l .col-lg-28,
+.ge-canvas.x3l .col-xl-28,
+.ge-canvas.x3l .col-xxl-28 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-29,
+.ge-canvas.x3l .col-sm-29,
+.ge-canvas.x3l .col-md-29,
+.ge-canvas.x3l .col-lg-29,
+.ge-canvas.x3l .col-xl-29,
+.ge-canvas.x3l .col-xxl-29 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-30,
+.ge-canvas.x3l .col-sm-30,
+.ge-canvas.x3l .col-md-30,
+.ge-canvas.x3l .col-lg-30,
+.ge-canvas.x3l .col-xl-30,
+.ge-canvas.x3l .col-xxl-30 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-31,
+.ge-canvas.x3l .col-sm-31,
+.ge-canvas.x3l .col-md-31,
+.ge-canvas.x3l .col-lg-31,
+.ge-canvas.x3l .col-xl-31,
+.ge-canvas.x3l .col-xxl-31 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-32,
+.ge-canvas.x3l .col-sm-32,
+.ge-canvas.x3l .col-md-32,
+.ge-canvas.x3l .col-lg-32,
+.ge-canvas.x3l .col-xl-32,
+.ge-canvas.x3l .col-xxl-32 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-33,
+.ge-canvas.x3l .col-sm-33,
+.ge-canvas.x3l .col-md-33,
+.ge-canvas.x3l .col-lg-33,
+.ge-canvas.x3l .col-xl-33,
+.ge-canvas.x3l .col-xxl-33 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-34,
+.ge-canvas.x3l .col-sm-34,
+.ge-canvas.x3l .col-md-34,
+.ge-canvas.x3l .col-lg-34,
+.ge-canvas.x3l .col-xl-34,
+.ge-canvas.x3l .col-xxl-34 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-35,
+.ge-canvas.x3l .col-sm-35,
+.ge-canvas.x3l .col-md-35,
+.ge-canvas.x3l .col-lg-35,
+.ge-canvas.x3l .col-xl-35,
+.ge-canvas.x3l .col-xxl-35 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-xs-36,
+.ge-canvas.x3l .col-sm-36,
+.ge-canvas.x3l .col-md-36,
+.ge-canvas.x3l .col-lg-36,
+.ge-canvas.x3l .col-xl-36,
+.ge-canvas.x3l .col-xxl-36 {
+  width: inherit;
+}
+.ge-canvas.x3l .col-x3l-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.x3l .col-x3l-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.x3l .col-x3l-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.x3l .col-x3l-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.x3l .col-x3l-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.x3l .col-x3l-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.x3l .col-x3l-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.x3l .col-x3l-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.x3l .col-x3l-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.x3l .col-x3l-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.x3l .col-x3l-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.x3l .col-x3l-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.x3l .col-x3l-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.x3l .col-x3l-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.x3l .col-x3l-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.x3l .col-x3l-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.x3l .col-x3l-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.x3l .col-x3l-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.x3l .col-x3l-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.x3l .col-x3l-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.x3l .col-x3l-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.x3l .col-x3l-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.x3l .col-x3l-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.x3l .col-x3l-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.x3l .col-x3l-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.x3l .col-x3l-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.x3l .col-x3l-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.x3l .col-x3l-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.x3l .col-x3l-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.x3l .col-x3l-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.x3l .col-x3l-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.x3l .col-x3l-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.x3l .col-x3l-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.x3l .col-x3l-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.x3l .col-x3l-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.x3l .col-x3l-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ge-canvas.x4l {
+  max-width: 2400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ge-canvas.x4l .col-xs-1,
+.ge-canvas.x4l .col-sm-1,
+.ge-canvas.x4l .col-md-1,
+.ge-canvas.x4l .col-lg-1,
+.ge-canvas.x4l .col-xl-1,
+.ge-canvas.x4l .col-xxl-1 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-2,
+.ge-canvas.x4l .col-sm-2,
+.ge-canvas.x4l .col-md-2,
+.ge-canvas.x4l .col-lg-2,
+.ge-canvas.x4l .col-xl-2,
+.ge-canvas.x4l .col-xxl-2 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-3,
+.ge-canvas.x4l .col-sm-3,
+.ge-canvas.x4l .col-md-3,
+.ge-canvas.x4l .col-lg-3,
+.ge-canvas.x4l .col-xl-3,
+.ge-canvas.x4l .col-xxl-3 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-4,
+.ge-canvas.x4l .col-sm-4,
+.ge-canvas.x4l .col-md-4,
+.ge-canvas.x4l .col-lg-4,
+.ge-canvas.x4l .col-xl-4,
+.ge-canvas.x4l .col-xxl-4 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-5,
+.ge-canvas.x4l .col-sm-5,
+.ge-canvas.x4l .col-md-5,
+.ge-canvas.x4l .col-lg-5,
+.ge-canvas.x4l .col-xl-5,
+.ge-canvas.x4l .col-xxl-5 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-6,
+.ge-canvas.x4l .col-sm-6,
+.ge-canvas.x4l .col-md-6,
+.ge-canvas.x4l .col-lg-6,
+.ge-canvas.x4l .col-xl-6,
+.ge-canvas.x4l .col-xxl-6 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-7,
+.ge-canvas.x4l .col-sm-7,
+.ge-canvas.x4l .col-md-7,
+.ge-canvas.x4l .col-lg-7,
+.ge-canvas.x4l .col-xl-7,
+.ge-canvas.x4l .col-xxl-7 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-8,
+.ge-canvas.x4l .col-sm-8,
+.ge-canvas.x4l .col-md-8,
+.ge-canvas.x4l .col-lg-8,
+.ge-canvas.x4l .col-xl-8,
+.ge-canvas.x4l .col-xxl-8 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-9,
+.ge-canvas.x4l .col-sm-9,
+.ge-canvas.x4l .col-md-9,
+.ge-canvas.x4l .col-lg-9,
+.ge-canvas.x4l .col-xl-9,
+.ge-canvas.x4l .col-xxl-9 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-10,
+.ge-canvas.x4l .col-sm-10,
+.ge-canvas.x4l .col-md-10,
+.ge-canvas.x4l .col-lg-10,
+.ge-canvas.x4l .col-xl-10,
+.ge-canvas.x4l .col-xxl-10 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-11,
+.ge-canvas.x4l .col-sm-11,
+.ge-canvas.x4l .col-md-11,
+.ge-canvas.x4l .col-lg-11,
+.ge-canvas.x4l .col-xl-11,
+.ge-canvas.x4l .col-xxl-11 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-12,
+.ge-canvas.x4l .col-sm-12,
+.ge-canvas.x4l .col-md-12,
+.ge-canvas.x4l .col-lg-12,
+.ge-canvas.x4l .col-xl-12,
+.ge-canvas.x4l .col-xxl-12 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-13,
+.ge-canvas.x4l .col-sm-13,
+.ge-canvas.x4l .col-md-13,
+.ge-canvas.x4l .col-lg-13,
+.ge-canvas.x4l .col-xl-13,
+.ge-canvas.x4l .col-xxl-13 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-14,
+.ge-canvas.x4l .col-sm-14,
+.ge-canvas.x4l .col-md-14,
+.ge-canvas.x4l .col-lg-14,
+.ge-canvas.x4l .col-xl-14,
+.ge-canvas.x4l .col-xxl-14 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-15,
+.ge-canvas.x4l .col-sm-15,
+.ge-canvas.x4l .col-md-15,
+.ge-canvas.x4l .col-lg-15,
+.ge-canvas.x4l .col-xl-15,
+.ge-canvas.x4l .col-xxl-15 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-16,
+.ge-canvas.x4l .col-sm-16,
+.ge-canvas.x4l .col-md-16,
+.ge-canvas.x4l .col-lg-16,
+.ge-canvas.x4l .col-xl-16,
+.ge-canvas.x4l .col-xxl-16 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-17,
+.ge-canvas.x4l .col-sm-17,
+.ge-canvas.x4l .col-md-17,
+.ge-canvas.x4l .col-lg-17,
+.ge-canvas.x4l .col-xl-17,
+.ge-canvas.x4l .col-xxl-17 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-18,
+.ge-canvas.x4l .col-sm-18,
+.ge-canvas.x4l .col-md-18,
+.ge-canvas.x4l .col-lg-18,
+.ge-canvas.x4l .col-xl-18,
+.ge-canvas.x4l .col-xxl-18 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-19,
+.ge-canvas.x4l .col-sm-19,
+.ge-canvas.x4l .col-md-19,
+.ge-canvas.x4l .col-lg-19,
+.ge-canvas.x4l .col-xl-19,
+.ge-canvas.x4l .col-xxl-19 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-20,
+.ge-canvas.x4l .col-sm-20,
+.ge-canvas.x4l .col-md-20,
+.ge-canvas.x4l .col-lg-20,
+.ge-canvas.x4l .col-xl-20,
+.ge-canvas.x4l .col-xxl-20 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-21,
+.ge-canvas.x4l .col-sm-21,
+.ge-canvas.x4l .col-md-21,
+.ge-canvas.x4l .col-lg-21,
+.ge-canvas.x4l .col-xl-21,
+.ge-canvas.x4l .col-xxl-21 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-22,
+.ge-canvas.x4l .col-sm-22,
+.ge-canvas.x4l .col-md-22,
+.ge-canvas.x4l .col-lg-22,
+.ge-canvas.x4l .col-xl-22,
+.ge-canvas.x4l .col-xxl-22 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-23,
+.ge-canvas.x4l .col-sm-23,
+.ge-canvas.x4l .col-md-23,
+.ge-canvas.x4l .col-lg-23,
+.ge-canvas.x4l .col-xl-23,
+.ge-canvas.x4l .col-xxl-23 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-24,
+.ge-canvas.x4l .col-sm-24,
+.ge-canvas.x4l .col-md-24,
+.ge-canvas.x4l .col-lg-24,
+.ge-canvas.x4l .col-xl-24,
+.ge-canvas.x4l .col-xxl-24 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-25,
+.ge-canvas.x4l .col-sm-25,
+.ge-canvas.x4l .col-md-25,
+.ge-canvas.x4l .col-lg-25,
+.ge-canvas.x4l .col-xl-25,
+.ge-canvas.x4l .col-xxl-25 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-26,
+.ge-canvas.x4l .col-sm-26,
+.ge-canvas.x4l .col-md-26,
+.ge-canvas.x4l .col-lg-26,
+.ge-canvas.x4l .col-xl-26,
+.ge-canvas.x4l .col-xxl-26 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-27,
+.ge-canvas.x4l .col-sm-27,
+.ge-canvas.x4l .col-md-27,
+.ge-canvas.x4l .col-lg-27,
+.ge-canvas.x4l .col-xl-27,
+.ge-canvas.x4l .col-xxl-27 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-28,
+.ge-canvas.x4l .col-sm-28,
+.ge-canvas.x4l .col-md-28,
+.ge-canvas.x4l .col-lg-28,
+.ge-canvas.x4l .col-xl-28,
+.ge-canvas.x4l .col-xxl-28 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-29,
+.ge-canvas.x4l .col-sm-29,
+.ge-canvas.x4l .col-md-29,
+.ge-canvas.x4l .col-lg-29,
+.ge-canvas.x4l .col-xl-29,
+.ge-canvas.x4l .col-xxl-29 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-30,
+.ge-canvas.x4l .col-sm-30,
+.ge-canvas.x4l .col-md-30,
+.ge-canvas.x4l .col-lg-30,
+.ge-canvas.x4l .col-xl-30,
+.ge-canvas.x4l .col-xxl-30 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-31,
+.ge-canvas.x4l .col-sm-31,
+.ge-canvas.x4l .col-md-31,
+.ge-canvas.x4l .col-lg-31,
+.ge-canvas.x4l .col-xl-31,
+.ge-canvas.x4l .col-xxl-31 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-32,
+.ge-canvas.x4l .col-sm-32,
+.ge-canvas.x4l .col-md-32,
+.ge-canvas.x4l .col-lg-32,
+.ge-canvas.x4l .col-xl-32,
+.ge-canvas.x4l .col-xxl-32 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-33,
+.ge-canvas.x4l .col-sm-33,
+.ge-canvas.x4l .col-md-33,
+.ge-canvas.x4l .col-lg-33,
+.ge-canvas.x4l .col-xl-33,
+.ge-canvas.x4l .col-xxl-33 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-34,
+.ge-canvas.x4l .col-sm-34,
+.ge-canvas.x4l .col-md-34,
+.ge-canvas.x4l .col-lg-34,
+.ge-canvas.x4l .col-xl-34,
+.ge-canvas.x4l .col-xxl-34 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-35,
+.ge-canvas.x4l .col-sm-35,
+.ge-canvas.x4l .col-md-35,
+.ge-canvas.x4l .col-lg-35,
+.ge-canvas.x4l .col-xl-35,
+.ge-canvas.x4l .col-xxl-35 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-xs-36,
+.ge-canvas.x4l .col-sm-36,
+.ge-canvas.x4l .col-md-36,
+.ge-canvas.x4l .col-lg-36,
+.ge-canvas.x4l .col-xl-36,
+.ge-canvas.x4l .col-xxl-36 {
+  width: inherit;
+}
+.ge-canvas.x4l .col-x4l-1 {
+  flex: 0 0 2.77777778%;
+  max-width: 2.77777778%;
+}
+.ge-canvas.x4l .col-x4l-2 {
+  flex: 0 0 5.55555556%;
+  max-width: 5.55555556%;
+}
+.ge-canvas.x4l .col-x4l-3 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+.ge-canvas.x4l .col-x4l-4 {
+  flex: 0 0 11.11111111%;
+  max-width: 11.11111111%;
+}
+.ge-canvas.x4l .col-x4l-5 {
+  flex: 0 0 13.88888889%;
+  max-width: 13.88888889%;
+}
+.ge-canvas.x4l .col-x4l-6 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+.ge-canvas.x4l .col-x4l-7 {
+  flex: 0 0 19.44444444%;
+  max-width: 19.44444444%;
+}
+.ge-canvas.x4l .col-x4l-8 {
+  flex: 0 0 22.22222222%;
+  max-width: 22.22222222%;
+}
+.ge-canvas.x4l .col-x4l-9 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ge-canvas.x4l .col-x4l-10 {
+  flex: 0 0 27.77777778%;
+  max-width: 27.77777778%;
+}
+.ge-canvas.x4l .col-x4l-11 {
+  flex: 0 0 30.55555556%;
+  max-width: 30.55555556%;
+}
+.ge-canvas.x4l .col-x4l-12 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.ge-canvas.x4l .col-x4l-13 {
+  flex: 0 0 36.11111111%;
+  max-width: 36.11111111%;
+}
+.ge-canvas.x4l .col-x4l-14 {
+  flex: 0 0 38.88888889%;
+  max-width: 38.88888889%;
+}
+.ge-canvas.x4l .col-x4l-15 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+.ge-canvas.x4l .col-x4l-16 {
+  flex: 0 0 44.44444444%;
+  max-width: 44.44444444%;
+}
+.ge-canvas.x4l .col-x4l-17 {
+  flex: 0 0 47.22222222%;
+  max-width: 47.22222222%;
+}
+.ge-canvas.x4l .col-x4l-18 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ge-canvas.x4l .col-x4l-19 {
+  flex: 0 0 52.77777778%;
+  max-width: 52.77777778%;
+}
+.ge-canvas.x4l .col-x4l-20 {
+  flex: 0 0 55.55555556%;
+  max-width: 55.55555556%;
+}
+.ge-canvas.x4l .col-x4l-21 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+.ge-canvas.x4l .col-x4l-22 {
+  flex: 0 0 61.11111111%;
+  max-width: 61.11111111%;
+}
+.ge-canvas.x4l .col-x4l-23 {
+  flex: 0 0 63.88888889%;
+  max-width: 63.88888889%;
+}
+.ge-canvas.x4l .col-x4l-24 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+.ge-canvas.x4l .col-x4l-25 {
+  flex: 0 0 69.44444444%;
+  max-width: 69.44444444%;
+}
+.ge-canvas.x4l .col-x4l-26 {
+  flex: 0 0 72.22222222%;
+  max-width: 72.22222222%;
+}
+.ge-canvas.x4l .col-x4l-27 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ge-canvas.x4l .col-x4l-28 {
+  flex: 0 0 77.77777778%;
+  max-width: 77.77777778%;
+}
+.ge-canvas.x4l .col-x4l-29 {
+  flex: 0 0 80.55555556%;
+  max-width: 80.55555556%;
+}
+.ge-canvas.x4l .col-x4l-30 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+.ge-canvas.x4l .col-x4l-31 {
+  flex: 0 0 86.11111111%;
+  max-width: 86.11111111%;
+}
+.ge-canvas.x4l .col-x4l-32 {
+  flex: 0 0 88.88888889%;
+  max-width: 88.88888889%;
+}
+.ge-canvas.x4l .col-x4l-33 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+.ge-canvas.x4l .col-x4l-34 {
+  flex: 0 0 94.44444444%;
+  max-width: 94.44444444%;
+}
+.ge-canvas.x4l .col-x4l-35 {
+  flex: 0 0 97.22222222%;
+  max-width: 97.22222222%;
+}
+.ge-canvas.x4l .col-x4l-36 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
